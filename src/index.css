@@ -6,7 +6,9 @@
   transform-box: fill-box;
   animation: spin 10s linear infinite;
 }
-
+.halftone-gradient {
+  position: relative;
+}
 .halftone-gradient::before {
   content: "";
   position: absolute;
