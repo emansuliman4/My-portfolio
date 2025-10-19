@@ -27,14 +27,14 @@ export function MyProjects() {
       color: "black",
       demo: "https://team2-project.vercel.app/view/template/index.html",
     },
-    {
-      title: "Clothes Store",
-      tools: "React, CSS",
-      description: `Modern e-commerce platform `,
-      icon: "👕",
-      color: "black",
-      demo: "#",
-    },
+    // {
+    //   title: "Clothes Store",
+    //   tools: "React, CSS",
+    //   description: `Modern e-commerce platform `,
+    //   icon: "👕",
+    //   color: "black",
+    //   demo: "#",
+    // },
     {
       title: "Movie Website",
       tools: "React, Tailwind CSS",
@@ -62,7 +62,7 @@ export function MyProjects() {
       {/* Projects Section */}
       <section
         id="projects"
-        className="min-h-screen py-32 px-4 relative overflow-hidden"
+        className="min-h-screen py-10 px-4 relative overflow-hidden"
       >
         <div className="max-w-7xl mx-auto relative z-10">
           <div className="text-center mb-24">

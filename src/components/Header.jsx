@@ -13,7 +13,7 @@ export default function Header() {
       navigate("/about");
     } else if (iconName === "code") {
       navigate("/projects");
-    } else if (iconName === "Heart") {
+    } else if (iconName === "heart") {
       navigate("/connect");
     } else null;
   };

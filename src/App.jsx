@@ -6,6 +6,7 @@ import { AboutMe } from "./pages/AboutMe";
 import Footer from "./components/Footer";
 import "./index.css";
 import { MyProjects } from "./pages/MyProjects";
+import ConnectMe from "./pages/ConnectMe";
 function App() {
   return (
     <Router>
@@ -17,6 +18,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<AboutMe />} />
           <Route path="/projects" element={<MyProjects />} />
+          <Route path="/connect" element={<ConnectMe />} />
         </Routes>
       </div>
       <Footer />
