@@ -11,7 +11,7 @@ export default function Header() {
       navigate("/");
     } else if (iconName === "coffee") {
       navigate("/about");
-    } else if (iconName === "Code") {
+    } else if (iconName === "code") {
       navigate("/projects");
     } else if (iconName === "Heart") {
       navigate("/connect");

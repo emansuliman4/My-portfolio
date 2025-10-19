@@ -17,7 +17,7 @@ function SocialComponent({ children, colorIN, color }) {
 
 export default function Social() {
   return (
-    <div className="flex justify-center gap-6 font-bold text-xl sm:text-2xl -m-40">
+    <div className="flex justify-center gap-6 font-bold text-xl sm:text-2xl mb-15">
       <SocialComponent colorIN="white">
         <div className="flex justify-center items-center w-full h-full gap-2">
           <LinkedIn />
