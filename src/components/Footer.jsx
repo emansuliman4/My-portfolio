@@ -13,7 +13,7 @@ export default function Footer() {
         navigate("/projects");
         break;
       case "/projects":
-        navigate("/contact");
+        navigate("/connect");
         break;
       default:
         navigate("/");
