@@ -1,6 +1,6 @@
 import { Star, Heart } from "./Icons";
 import { useLocation, useNavigate } from "react-router-dom";
-import { Github, Linkedin, Smartphone } from "lucide-react";
+import { Github, Linkedin, Smartphone, FileUser } from "lucide-react";
 
 export default function Footer() {
   const location = useLocation();
@@ -48,10 +48,17 @@ export default function Footer() {
       <Star />
       <div className="text-white flex justify-center gap-6 py-4">
         <a
+          href="https://drive.google.com/file/d/1un7RZLc6agVpseYQB_uJFVZhZn1aqYlz/view?usp=sharing"
+          target="_blank"
+          className="hover:scale-125 transition-colors"
+        >
+          <FileUser size={32} />
+        </a>
+        <a
           href="https://github.com/emansuliman4"
           target="_blank"
           rel="noopener noreferrer"
-          className="hover:text-red-400 transition-colors"
+          className="hover:scale-125 transition-colors"
         >
           <Github size={32} />
         </a>
@@ -59,14 +66,14 @@ export default function Footer() {
           href="https://www.linkedin.com/in/eman-magdy-suliman"
           target="_blank"
           rel="noopener noreferrer"
-          className="hover:text-red-400 transition-colors"
+          className="hover:scale-125 transition-colors"
         >
           <Linkedin size={32} />
         </a>
         <a
           href="https://wa.me/201220265743"
           target="_blank"
-          className="hover:text-red-400 transition-colors"
+          className="hover:scale-125 transition-colors"
         >
           <Smartphone size={32} />
         </a>
