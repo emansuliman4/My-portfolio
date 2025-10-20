@@ -1,5 +1,6 @@
 import { Star, Heart } from "./Icons";
 import { useLocation, useNavigate } from "react-router-dom";
+import { Github, Linkedin, Smartphone } from "lucide-react";
 
 export default function Footer() {
   const location = useLocation();
@@ -45,6 +46,32 @@ export default function Footer() {
         <path d="M0,50 Q300,20 600,50 T1200,50 L1200,0 L0,0 Z" fill="white" />
       </svg>
       <Star />
+      <div className="text-white flex justify-center gap-6 py-4">
+        <a
+          href="https://github.com/emansuliman4"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:text-red-400 transition-colors"
+        >
+          <Github size={32} />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/eman-magdy-suliman"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:text-red-400 transition-colors"
+        >
+          <Linkedin size={32} />
+        </a>
+        <a
+          href="https://wa.me/01220265743"
+          target="_blank"
+          className="hover:text-red-400 transition-colors"
+        >
+          <Smartphone size={32} />
+        </a>
+      </div>
+
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 100">
         <path
           fill="white"
