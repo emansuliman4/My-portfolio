@@ -1,12 +1,25 @@
-import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { useNavigate, useLocation } from "react-router-dom";
 
 export default function Header() {
   const navigate = useNavigate();
+  const location = useLocation();
   const [activeIcon, setActiveIcon] = useState(null);
 
+  useEffect(() => {
+    const path = location.pathname;
+    if (path === "/") {
+      setActiveIcon("rocket");
+    } else if (path === "/about") {
+      setActiveIcon("coffee");
+    } else if (path === "/projects") {
+      setActiveIcon("code");
+    } else if (path === "/connect") {
+      setActiveIcon("heart");
+    }
+  }, [location.pathname]);
+
   const handleIconClick = (iconName) => {
-    setActiveIcon(activeIcon === iconName ? null : iconName);
     if (iconName === "rocket") {
       navigate("/");
     } else if (iconName === "coffee") {
@@ -15,7 +28,7 @@ export default function Header() {
       navigate("/projects");
     } else if (iconName === "heart") {
       navigate("/connect");
-    } else null;
+    }
   };
 
   return (
@@ -30,9 +43,9 @@ export default function Header() {
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
             className="lucide lucide-sparkles-icon lucide-sparkles pb-2 animate-spin "
           >
             <path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z" />
