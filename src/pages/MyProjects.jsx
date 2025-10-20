@@ -67,7 +67,7 @@ export function MyProjects() {
         <div className="max-w-7xl mx-auto relative z-10">
           <div className="text-center mb-24">
             <div className="inline-block relative">
-              <h2 className="text-6xl md:text-8xl font-black bg-black text-white px-12 py-8 transform -rotate-2 hover:rotate-2 transition-all border-8 border-black shadow-[16px_16px_0px_0px_rgba(0,0,0,0.3)]">
+              <h2 className="text-4xl md:text-8xl font-black bg-black text-white px-12 py-8 transform -rotate-2 hover:rotate-2 transition-all border-8 border-black shadow-[16px_16px_0px_0px_rgba(0,0,0,0.3)]">
                 MY PROJECTS
               </h2>
               <div
