@@ -64,14 +64,13 @@ export default function Footer() {
           <Linkedin size={32} />
         </a>
         <a
-          href="https://wa.me/01220265743"
+          href="https://wa.me/201220265743"
           target="_blank"
           className="hover:text-red-400 transition-colors"
         >
           <Smartphone size={32} />
         </a>
       </div>
-
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 100">
         <path
           fill="white"
