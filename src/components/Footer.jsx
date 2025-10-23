@@ -20,7 +20,6 @@ export default function Footer() {
         navigate("/");
     }
   };
-
   return (
     <div className="bg-black ">
       <div className="flex justify-center ">
