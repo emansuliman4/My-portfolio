@@ -984,15 +984,15 @@ function SplashCursor({
       splat(pointer.texcoordX, pointer.texcoordY, dx, dy, pointer.color);
     }
 
-    function clickSplat(pointer) {
-      const color = generateColor();
-      color.r *= 10.0;
-      color.g *= 10.0;
-      color.b *= 10.0;
-      let dx = 10 * (Math.random() - 0.5);
-      let dy = 30 * (Math.random() - 0.5);
-      splat(pointer.texcoordX, pointer.texcoordY, dx, dy, color);
-    }
+    // function clickSplat(pointer) {
+    //   const color = generateColor();
+    //   color.r *= 10.0;
+    //   color.g *= 10.0;
+    //   color.b *= 10.0;
+    //   let dx = 10 * (Math.random() - 0.5);
+    //   let dy = 30 * (Math.random() - 0.5);
+    //   splat(pointer.texcoordX, pointer.texcoordY, dx, dy, color);
+    // }
 
     function splat(x, y, dx, dy, color) {
       splatProgram.bind();
@@ -1146,13 +1146,13 @@ function SplashCursor({
       return hash;
     }
 
-    window.addEventListener("mousedown", (e) => {
-      let pointer = pointers[0];
-      let posX = scaleByPixelRatio(e.clientX);
-      let posY = scaleByPixelRatio(e.clientY);
-      updatePointerDownData(pointer, -1, posX, posY);
-      clickSplat(pointer);
-    });
+    // window.addEventListener("mousedown", (e) => {
+    //   let pointer = pointers[0];
+    //   let posX = scaleByPixelRatio(e.clientX);
+    //   let posY = scaleByPixelRatio(e.clientY);
+    //   updatePointerDownData(pointer, -1, posX, posY);
+    //   clickSplat(pointer);
+    // });
 
     document.body.addEventListener(
       "mousemove",
