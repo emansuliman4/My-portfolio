@@ -48,7 +48,7 @@ export default function Footer() {
       <Star />
       <div className="text-white flex justify-center gap-6 py-4">
         <a
-          href="https://drive.google.com/file/d/1_XlR-oDuh6t_XciH445_TM5NEXPTBO1m/view?usp=sharing"
+          href="https://drive.google.com/file/d/1iA28zO3p-4HcdMy5auTk5MpVnaMaqw3l/view?usp=sharing"
           target="_blank"
           className="hover:scale-125 transition-colors"
         >
